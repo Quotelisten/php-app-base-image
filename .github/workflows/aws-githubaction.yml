@@ -32,7 +32,7 @@ on:
 
 env:
   AWS_REGION: us-west-1
-  ECR_REPOSITORY: php-api-base-image-ecr
+  ECR_REPOSITORY: 991561267216.dkr.ecr.us-east-1.amazonaws.com/php-api-base-image-ecr
   ECS_SERVICE: php-app-cl-service # set this to your Amazon ECS service name
   ECS_CLUSTER: php-app-cluster # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION:
