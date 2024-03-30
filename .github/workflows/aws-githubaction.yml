@@ -32,14 +32,14 @@ on:
 
 env:
   AWS_REGION: us-west-1
-  ECR_REPOSITORY: php-api-base-image-ecrepo
+  ECR_REPOSITORY: php-api-base-image-repo #Name of the ECR repository that you have created.
   ECS_SERVICE: php-app-cl-service # set this to your Amazon ECS service name
   ECS_CLUSTER: php-app-cluster # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION:
     .aws/task-definition.json # set this to the path to your Amazon ECS task definition
     # file, e.g. .aws/task-definition.json
   CONTAINER_NAME:
-    php-api-base-image-ecr # set this to the name of the container in the
+    php-app-task-def # set this to the name of the container in the
     # containerDefinitions section of your task definition
 
 permissions:
